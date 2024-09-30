@@ -1,0 +1,15 @@
+public class Task9 {
+    public static void main(String[] args) {
+        double monthlyDeposit = 100;
+        double annualInterestRate = 0.05;
+        double monthlyInterestRate = annualInterestRate / 12;
+        
+        double totalAmount = 0;
+        int months = 6; // Say, for 6 months
+
+        for (int i = 1; i <= months; i++) {
+            totalAmount = (totalAmount + monthlyDeposit) * (1 + monthlyInterestRate);
+            System.out.printf("After month %d, the value in the account becomes %.3f\n", i, totalAmount);
+        }
+    }
+}
