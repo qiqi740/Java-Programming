@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Task6 {
+    public static void main(String[] args) {
+
+        final double POUNDS_TO_KILOGRAMS = 0.45359237;
+        final double INCHES_TO_METERS = 0.0254;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter weight in pounds: ");
+        double weightInPounds = scanner.nextDouble();
+
+        System.out.print("Enter height in inches: ");
+        double heightInInches = scanner.nextDouble();
+        double weightInKilograms = weightInPounds * POUNDS_TO_KILOGRAMS;
+        double heightInMeters = heightInInches * INCHES_TO_METERS;
+        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+        System.out.printf("BMI is %.4f\n", bmi);
+    }
+}
