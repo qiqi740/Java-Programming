@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Lab2Task17 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        if(input < 10){
+            System.out.println('0' + (char)input);
+    }
+}
