@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Lab2Task18 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an integer:");
+        int number = input.nextInt();
+        boolean isLeapYear = (number % 4 == 0);
+        isLeapYear = isLeapYear && (number % 100 != 0);
+        isLeapYear = isLeapYear || (number % 400 == 0);
+        if (isLeapYear){
+            System.out.println("is Leapyear");
+        }else System.out.println("is not leapyear");
+    }
+}
